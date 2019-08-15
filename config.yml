@@ -1,0 +1,17 @@
+title: just testing this out
+tagline: A brand new course on Learning Lab
+description: trying the course builder
+template:
+  repo: just-testing-this-out-template
+  name: just-testing-this-out
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
